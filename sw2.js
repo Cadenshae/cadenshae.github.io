@@ -1,11 +1,11 @@
 self.addEventListener('install', (e) => {
     e.waitUntil(
         caches.open('cadenshae-store').then((cache) => cache.addAll([
-            '/index.html',
+            '/pwatest.html',
             '/android-chrome-192x192.png',
             '/android-chrome-512x512.png',
             '/apple-touch-icon.png',
-            '/maskable_icon.png'
+            '/maskable_icon_x512.png'
         ])),
     );
 });
